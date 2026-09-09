@@ -5,7 +5,7 @@ def divide(a, b):
 
 def get_first(items):
     # BUG: crashes with IndexError on an empty list
-    return items[0]
+    return items[0] if items else None
 
 
 def get_user_name(user):
